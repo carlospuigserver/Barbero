@@ -10,6 +10,7 @@ def main():
     clientes= [Cliente(f"Cliente {i}",barberia) for i in range(10)]
     hilo_barbero=threading.Thread(target=barbero.trabajar)
     hilo_barbero.start()
+    
 
     for cliente in clientes:
         cliente.visita()
