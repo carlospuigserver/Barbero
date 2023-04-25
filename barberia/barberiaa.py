@@ -14,3 +14,9 @@ class Barberia:
             self.sillas.put(cliente)
             print(f"{cliente} dice: Me siento en la silla a esperar")
             self.sillas(cliente)
+
+    def salir(self,barbero):
+        while not self.sillas.empty():
+            cliente=self.sillas.get()
+            print(f"{barbero} esta cortando el pelo a {cliente}")
+            time.sleep(3)
