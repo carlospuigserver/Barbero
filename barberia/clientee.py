@@ -1,7 +1,7 @@
 import threading
 import time
 
-class cliete:
+class Cliente:
     def __init__(self, nombre,barberia):
         self.nombre=nombre
         self.barberia=barberia
